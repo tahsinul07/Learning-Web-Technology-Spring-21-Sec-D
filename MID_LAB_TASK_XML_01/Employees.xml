@@ -1,0 +1,49 @@
+<Employees>
+  <employee ID="1">
+    <name> 
+    <firstName>John</firstname>
+    <lastName>Doe</lastName>
+    </name>
+     <address> 
+       h#38 R#3, Banani, Dhaka  
+     </addess>
+       <dept> 
+        sales
+       </dept>
+         <salary> 
+           20000
+         </salary>
+  </employee>
+
+  <employee ID="2">
+    <name> 
+    <firstName>Mark</firstname>
+    <lastName>Zukarburg</lastName>
+    </name>
+     <address> 
+       Mirpur, Dhaka  
+     </addess>
+       <dept> 
+        accounts
+       </dept>
+         <salary> 
+           12000
+         </salary>
+  </employee>
+         
+  <employee ID="3">
+    <name> 
+    <firstName>Ala</firstname>
+    <lastName>Voski</lastName>
+    </name>
+     <address> 
+       h#38 R#3, Motijeel
+     </addess>
+       <dept> 
+        Human Resourse
+       </dept>
+         <salary> 
+           30000
+         </salary>
+  </employee>     
+</Employees>
