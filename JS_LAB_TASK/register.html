@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+ <div class="header">
+ 	<h2 align="center"> registration </h2>
+ </div>
+
+ <form class="form" id="form" action="index.html" onsubmit="return validate()">
+
+ <div class="form-control">
+ 	<label> Username </label>
+ 	<input type="text"  name="username" id="username">
+
+
+ </div>
+ <div class="form-control">
+ 	<label> Email </label>
+ 	<input type="text" name="email" id="email">
+
+ </div>
+ <div class="form-control">
+ 	<label> contact number </label>
+ 	<input type="number" name="number" id="number">
+
+ </div>
+ <div class="form-control">
+ 	<label> password </label>
+ 	<input type="password" name="password_1" id="password_1">
+
+ </div>
+ </div>
+ <div class="form-control">
+ 	<label> confirm password </label>
+ 	<input type="password" name="password_2" id="password_2">
+
+ </div><br><br>
+
+ </div>
+ <div class="">
+ 	<button type="submit"  name="submit" class='btn'> Register </button>
+ </div>
+</form>
+
+
+
+
+<br>
+<h3 align="center"> already a member? <a href="login.html">Sign In</a></h5>
+<br><br><h5 align="center"> © GetItDone 2021 </h5>
+
+
+<script type="text/javascript">
+
+   function validate(){
+	
+    //const form=document.getElementById('form');
+    var username=document.getElementById('username').value;
+    var email=document.getElementById('email').value;
+    var number=document.getElementById('number').value;
+    var password_1=document.getElementById('password_1').value;
+    var password_2=document.getElementById('password_2').value;
+
+    if(username==""){
+
+    	//document.getElementById('username').innerHTML="username is required";
+    	alert("username is required");
+    	return false;
+    }
+
+    if(email==""){
+
+    	//document.getElementById('username').innerHTML="username is required";
+    	alert("email is required");
+    	return false;
+    }
+
+    if(number==""){
+
+    	//document.getElementById('username').innerHTML="username is required";
+    	alert("contact number is required");
+    	return false;
+    }
+
+    if(number.length<11){
+
+    	//document.getElementById('username').innerHTML="username is required";
+    	alert("please enter a valid contact number");
+    	return false;
+    }
+
+    if(password_1==""){
+
+    	//document.getElementById('username').innerHTML="username is required";
+    	alert(" please choose a password");
+    	return false;
+    }
+
+    if(password_1.length<6){
+
+    	//document.getElementById('username').innerHTML="username is required";
+    	alert("password must contain 6 character");
+    	return false;
+    }
+
+
+    if(password_2 !== password_1){
+
+    	//document.getElementById('username').innerHTML="username is required";
+    	alert("password didn't match..try again!");
+    	return false;
+    }
+
+    
+
+}
+
+
+</script>
+
+
+</body>
+</html>
